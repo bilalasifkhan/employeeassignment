@@ -22,10 +22,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Employee Portal Page</title>
+    <title>Employee Portal Page - ${title}</title>
+    
+    <script>
+    	window.menu='${title}';
+    </script>
 
     <!-- Bootstrap Core CSS -->
     <link href="${css}/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Bootstrap Theme Readable CSS -->
+    <link href="${css}/bootstrap-theme-readable.css" rel="stylesheet">
+	
 
     <!-- Custom CSS -->
     <link href="${css}/simple-sidebar.css" rel="stylesheet">
@@ -44,53 +52,38 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Start Bootstrap
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#">Shortcuts</a>
-                </li>
-                <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
+       <%@include file="./shared/sidebar.jsp" %>
+        
         <!-- /#sidebar-wrapper -->
+        
 
         <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Simple Sidebar</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <c:if test="${userClickHome == true}">
+        	<%@include file="./home.jsp" %>
+        </c:if>
+        
+        <!-- Loads only when user clicks Find Employee -->
+        <c:if test="${userClickFindEmployee == true}">
+        	<%@include file="./findEmployee.jsp" %>
+        </c:if>
+        
+        <!-- Loads only when user clicks Add Employee -->
+        <c:if test="${userClickAddEmployee == true}">
+        	<%@include file="./addEmployee.jsp" %>
+        </c:if>
+        
+        <!-- Loads only when user clicks Update Employee -->
+        <c:if test="${userClickUpdateEmployee == true}">
+        	<%@include file="./updateEmployee.jsp" %>
+        </c:if>
+        
+        <!-- Loads only when user clicks Delete Employee -->
+        <c:if test="${userClickDeleteEmployee == true}">
+        	<%@include file="./deleteEmployee.jsp" %>
+        </c:if>
+        
         <!-- /#page-content-wrapper -->
-
+	
     </div>
     <!-- /#wrapper -->
 
@@ -99,6 +92,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="${js}/bootstrap.min.js"></script>
+    
+    <!-- Self Coded JavaScript file -->
+    <script src="${js}/myapp.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
@@ -107,6 +103,9 @@
         $("#wrapper").toggleClass("toggled");
     });
     </script>
+    
+   
+    
 
 </body>
 
