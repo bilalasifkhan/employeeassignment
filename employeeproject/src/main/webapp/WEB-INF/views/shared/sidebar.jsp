@@ -19,8 +19,12 @@
                     <a href="${contextRoot}/deleteEmployee">Delete Employee</a>
                 </li>
                 <li id="promoteEmployee">
-                    <a href="#">Promote Employee</a>
+                    <a href="${contextRoot}/promoteEmployee">Promote Employee</a>
                 </li>
+                <li id="listAllEmployees">
+                    <a href="${contextRoot}/listAllEmployees">List All Employees</a>
+                </li>
+                
             </ul>
         </div>
  

@@ -1,17 +1,23 @@
-<!-- Add Employee Page Content -->
+<!-- Promote Employee Page Content -->
 <div id="page-content-wrapper">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
-				<h1>Add Employee</h1>
+				<h1>Promote Employee Update</h1>
 				<p>Please enter employee details</p>
 				
-				<form action="results" method="POST" class="form-horizontal">
+				<form action="resultsPromote" method="POST" class="form-horizontal">
 					<fieldset>
 						<div class="form-group" id="formcustom">
 							<label class="control-label" for="focusedInput">Employee
 								Name</label> <input class="form=control" id="focusedInput" type="text"
 								name="empName" placeholder="FirstName LastName">
+
+						</div>
+						<div class="form-group" id="formcustom">
+							<label class="control-label" for="focusedInput">Employee
+								ID</label> <input class="form=control" id="focusedInput" type="text"
+								name="empId" placeholder="1000">
 
 						</div>
 						<div class="form-group" id="formcustom">
