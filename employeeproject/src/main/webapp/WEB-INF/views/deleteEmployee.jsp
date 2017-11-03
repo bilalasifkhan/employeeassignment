@@ -9,11 +9,10 @@
 				<form action="resultsDelete" method="POST" class="form-horizontal">
 					<fieldset>
 
-						</div>
 						<div class="form-group" id="formcustom">
 							<label class="control-label" for="focusedInput">Employee
 								ID</label> <input class="form=control" id="focusedInput" type="text"
-								name="empId" placeholder="1000">
+								name="empId" placeholder="EMP100100789">
 
 						</div>
 						<div class="form-group">
@@ -24,12 +23,6 @@
 					</fieldset>
 				</form>
 
-				
-				<p>
-					Make sure to keep all page content within the
-					<code>#page-content-wrapper</code>
-					.
-				</p>
 				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle
 					Menu</a>
 			</div>

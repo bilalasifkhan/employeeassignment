@@ -18,7 +18,7 @@
 							<tbody>
 								<c:forEach items="${employees}" var="employee">
 									<tr>
-										<td>${employee.id}</td>
+										<td>${employee.empId}</td>
 										<td>${employee.name}</td>
 										<td>${employee.grade}</td>
 										<td>${employee.salary}</td>
@@ -27,6 +27,7 @@
 								</c:forEach>
 							</tbody>
 						</table>
+						<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
 					</div>
 				</div>
 			</div>

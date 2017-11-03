@@ -103,7 +103,7 @@ public class PageController {
 	}
 
 	@RequestMapping(value = { "/resultsUpdate" }, method = RequestMethod.POST)
-	public ModelAndView employeeUpdated(@RequestParam("empName") String empName, @RequestParam("empId") int empId,
+	public ModelAndView employeeUpdated(@RequestParam("empName") String empName, @RequestParam("empId") String empId,
 			@RequestParam("empGrade") int empGrade, @RequestParam("empSalary") long empSalary) {
 
 		boolean employeeValid = employeeDAO.updateEmployee(empName, empId, empGrade, empSalary, true);
@@ -126,7 +126,7 @@ public class PageController {
 	}
 
 	@RequestMapping(value = { "/resultsDelete" }, method = RequestMethod.POST)
-	public ModelAndView employeeUpdated(@RequestParam("empId") int empId) {
+	public ModelAndView employeeUpdated(@RequestParam("empId") String empId) {
 
 		boolean employeeValid = employeeDAO.deleteEmployee(empId);
 		ModelAndView mv = new ModelAndView("page");
@@ -148,7 +148,7 @@ public class PageController {
 	}
 
 	@RequestMapping(value = { "/resultsPromote" }, method = RequestMethod.POST)
-	public ModelAndView employeeUpdated(@RequestParam("empId") int empId, @RequestParam("empGrade") int empGrade,
+	public ModelAndView employeeUpdated(@RequestParam("empId") String empId, @RequestParam("empGrade") int empGrade,
 			@RequestParam("empSalary") long empSalary) {
 
 		boolean employeeValid = employeeDAO.promoteEmployee(empId, empGrade, empSalary);

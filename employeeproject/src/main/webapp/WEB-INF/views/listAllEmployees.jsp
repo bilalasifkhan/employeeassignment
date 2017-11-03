@@ -4,11 +4,6 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<h1>List of All Employees</h1>
-				<p>
-					Make sure to keep all page content within the
-					<code>#page-content-wrapper</code>
-					.
-				</p>
 
 			</div>
 		</div>
@@ -29,7 +24,7 @@
 						<tbody>
 							<c:forEach items="${employees}" var="employee">
 								<tr>
-									<td>${employee.id}</td>
+									<td>${employee.empId}</td>
 									<td>${employee.name}</td>
 									<td>${employee.grade}</td>
 								</tr>

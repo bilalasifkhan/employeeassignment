@@ -8,7 +8,7 @@ import com.qts.employeeprojectbackend.dto.Employee;
 public class EmployeeMain {
 	
 	public static void main(String []args) {
-		EmployeeDAOImpl employeeDAO = new EmployeeDAOImpl();
+		/*EmployeeDAOImpl employeeDAO = new EmployeeDAOImpl();
 		
 		List<Employee> employeeList = new ArrayList<>();
 		employeeList = employeeDAO.listAllEmp();
@@ -27,7 +27,7 @@ public class EmployeeMain {
 			+ " " + e.getSalary() + " " + e.getIsActive());
 		}
 		
-		employeeDAO.promoteEmployee(1004, 10, 65000);
+		employeeDAO.promoteEmployee("EMP10040", 10, 65000);
 		System.out.println(" ");
 		System.out.println("The size of Array: " + employeeDAO.listAll().size());
 		
@@ -64,7 +64,9 @@ public class EmployeeMain {
 			Employee e = employeeDAO.listAllEmp().get(i);
 			System.out.println(e.getName() + " " + e.getId() + " " + e.getGrade() 
 			+ " " + e.getSalary() + " " + e.getIsActive());
-		}
+		}*/
 	}
+	
+	
 
 }

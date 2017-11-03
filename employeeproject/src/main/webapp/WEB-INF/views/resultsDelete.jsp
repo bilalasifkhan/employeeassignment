@@ -9,7 +9,8 @@
 						<button type="button" class="close" data-dismiss="alert">&times;</button>
 						<strong>Done!</strong> Employee Record set to inactive.
 					</div>
-
+					
+					<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
 				</div>
 			</div>
 		</div>

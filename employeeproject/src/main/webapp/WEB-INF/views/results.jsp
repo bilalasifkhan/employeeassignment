@@ -9,6 +9,8 @@
 						<button type="button" class="close" data-dismiss="alert">&times;</button>
 						<strong>Well done!</strong> You have successfully added a new employee.
 					</div>
+					
+					<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
 
 				</div>
 			</div>
