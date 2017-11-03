@@ -1,5 +1,7 @@
 # employeeproject
-Employee Project in Spring
+Employee Project in Spring. There are 2 parts to this project. One part that deals with front end task such as Controller management and Web View interface.
+Second part deals with executing the backend business logic and interaction with DBMS.
+First part of project is called employeeproject while second part is called employeeprojectbackend.
 
 
 This project so far has been implemented with H2 Database. Please download h2 database from: www.h2database.com. You will need to download the zip package. Extract the package to your preferred location.
@@ -16,3 +18,10 @@ Username to be used is root
 Password is !23Qweasdzxc
 
 If you have any questions please feel free to contact me at bilalasifkhan@qts.com
+
+Create Database and populate:
+--------------------------
+
+Included in the employeeprojectbackend is databaseQueries.sql file
+Please run the query to create DB Table.
+To pre-populate the table, please run EmployeeTestCases as TESTNG found in package: com.qts.employeeprojectbackend.test - employeeproectbackend.
